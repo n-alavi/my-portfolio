@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[177],{4058:(e,s,a)=>{Promise.resolve().then(a.t.bind(a,6016,23)),Promise.resolve().then(a.t.bind(a,9324,23))},9324:()=>{},6016:e=>{e.exports={style:{fontFamily:"'vazir', 'vazir Fallback'"},className:"__className_eb374f"}}},e=>{var s=s=>e(e.s=s);e.O(0,[296,441,517,358],()=>s(4058)),_N_E=e.O()}]);
