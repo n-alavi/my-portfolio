@@ -51,29 +51,17 @@ export default function Intro() {
 
       {/* introduction  container */}
       <motion.div
-        className="leading-[1.5] mb-10  px-4 text-xl font-medium sm:text-2xl"
+        className="px-4 text-lg font-medium sm:text-2xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h4 className="mt-4 text-2xl font-medium">سلام</h4>
-        <h1 className="mt-4">
-          <span className="font-bold">من </span> دانشجوی{" "}
-          <span className="font-bold">
-            فرانت اند هستم. <br /> این وبسایت جهت آشنایی بیشتر با نمونه کارهای
-            من است.
-          </span>
-        </h1>
 
-        <div className="flex  mb-6 justify-center">
-          <Link href="#contact">
-            <button
-              className="bg-gray-500 text-white py-2 px-4 mt-8 rounded-md shadow hover:bg-gray-800 transition"
-              style={{ alignSelf: "flex-start" }}
-            >
-              ارتباط با من
-            </button>
-          </Link>
-        </div>
+        <h1 className="mt-4">
+          <span className="font-bold">
+            Results-driven Frontend Developer with proven commercial experience building production-ready web applications using React.js and Next.js. Currently expanding expertise as a Backend Developer Trainee at Mother Technology Innovation Center, working with modern technologies including Elysia/Bun, PostgreSQL, and Prisma ORM.
+          </span>
+
+        </h1>
       </motion.div>
     </div>
   );

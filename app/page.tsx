@@ -1,4 +1,4 @@
-import About from "./components/about";
+// import About from "./components/about";
 import Contact from "./components/contactus";
 import Footer from "./components/footer";
 import Intro from "./components/intro";
@@ -12,11 +12,11 @@ export default function Home() {
     <div className="flex flex-col max-w-screen-sm">
       <Navbar />
       <Intro />
-      <About />
+      {/* <About /> */}
       <SkillsCard />
       <Services />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

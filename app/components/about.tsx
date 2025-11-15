@@ -23,7 +23,7 @@ export default function About() {
         id="about"
       >
         <h1 className="text-center text-3xl font-bold text-gray-800 mb-8">
-          درباره من
+          About me
         </h1>
         <div className="flex flex-col md:flex-row gap-4">
           {/*  Column 1 */}

@@ -13,16 +13,16 @@ export default function Services() {
   return (
     <div id="services">
       <motion.div
-        className="mb-28 mt-20 w-full max-w-[45rem] scroll-mt-28 px-4 sm:mb-40"
+        className="mt-20 w-full max-w-[45rem] scroll-mt-28 px-4 sm:mb-40"
         initial={{ opacity: 0, y: 100 }}
         animate={controls}
         transition={{ duration: 0.8, ease: "easeOut" }} // Adjust timing and easing
         ref={ref} // Attach the ref to the section to observe
       >
         <div className=" px-4 max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8">خدمات من</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            کارهایی که میتوانم انجام دهم
+          <h2 className="text-3xl font-bold text-center mb-8">Services</h2>
+          <p className="text-lg text-gray-600 mb-12 text-center">
+            Things I can do
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

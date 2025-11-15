@@ -2,28 +2,75 @@
 
 import { motion } from "framer-motion";
 import useInViewAnimation from "../custom-hook/context/useInViewAnimation";
+import { projects } from "../constant/data";
+import Image from "next/image";
 
 export default function Projects() {
   const { ref, controls } = useInViewAnimation({
     threshold: 0.3,
     triggerOnce: false,
-  }); // Use the hook
+  });
 
   return (
     <div id="projects">
       <motion.div
-        className="mb-28 mt-20 w-full max-w-[45rem] scroll-mt-28 px-4 sm:mb-40"
-        initial={{ opacity: 0, y: 100 }}
+        ref={ref}
+        initial={{ opacity: 0, y: 60 }}
         animate={controls}
-        transition={{ duration: 0.8, ease: "easeOut" }} // Adjust timing and easing
-        ref={ref} // Attach the ref to the section to observe
-        id="projects"
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="mt-20 w-full max-w-[70rem] mx-auto px-4 sm:px-8 scroll-mt-28"
       >
-        <>
-          <h1 className="text-3xl font-bold text-center mb-8">پروژه های من</h1>
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900">Projects</h2>
+        </div>
 
-          <h1 className="text-2xl font-bold my-24">به زودی... </h1>
-        </>
+        {/* Grid of cards */}
+        <div className="grid grid-cols-1  gap-8">
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -4 }}
+              className="group flex flex-col bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
+            >
+              {/* Image */}
+              <div className="flex justify-center mb-5">
+                <img
+                  src={project.thumbnail}
+                  alt={project.name}
+                 
+                  className="w-24 h-24 object-contain rounded-md group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+
+              {/* Name */}
+              <h3 className="text-xl font-semibold text-gray-800 text-center mb-2">
+                {project.name}
+              </h3>
+
+              {/* Description as bullet‑style */}
+              <ul className="text-sm text-gray-700 leading-relaxed space-y-1 mb-4">
+                {project.description.split("\n").map((line, i) => (
+                  <li key={i} className="flex items-start">
+                    <span className="whitespace-pre-line">{line}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Footer Link */}
+              <div className="mt-auto flex justify-center">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-purple-600 font-medium hover:text-purple-700 transition-colors"
+                >
+                  Visit Project →
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </div>
   );
