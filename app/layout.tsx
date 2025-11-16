@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const vazir = localFont({
-  src: "./font/Vazir.woff2",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Fatemeh Alavi | Personal Portfolio",
@@ -18,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="ltr" className={vazir.className}>
+    <html lang="fa" dir="ltr">
       <body className=" max-w-screen-sm mx-auto bg-[#FFF8E8] ">{children}</body>
     </html>
   );
