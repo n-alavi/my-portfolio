@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://n-alavi.github.io/my-portfolio",
-   "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
