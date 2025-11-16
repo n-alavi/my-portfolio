@@ -13,7 +13,6 @@ import {
   SiMongodb,
   SiBun
 } from "react-icons/si";
-import { TbServerBolt } from "react-icons/tb";
 
 import {
   FaGlobe,

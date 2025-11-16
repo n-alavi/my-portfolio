@@ -1,9 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ProfilePic from "@/public/assets/profile.svg";
 
 export default function Intro() {
   return (
@@ -22,7 +20,7 @@ export default function Intro() {
               }}
             >
               <Image
-                src={ProfilePic}
+                src="/assets/profile.svg"
                 alt="profile-picture"
                 width={192}
                 height={192}

@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import useInViewAnimation from "../custom-hook/context/useInViewAnimation";
 import { projects } from "../constant/data";
-import Image from "next/image";
+import useInViewAnimation from "../custom-hook/context/useInViewAnimation";
 
 export default function Projects() {
   const { ref, controls } = useInViewAnimation({

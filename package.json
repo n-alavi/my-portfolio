@@ -2,8 +2,8 @@
   "name": "portfolio2",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://github.com/n-alavi/my-portfolio.git",
-   "scripts": {
+  "homepage": "https://n-alavi.github.io/my-portfolio",
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "20.19.25",
+    "@types/react": "19.2.5",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
