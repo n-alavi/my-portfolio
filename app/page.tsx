@@ -13,9 +13,9 @@ export default function Home() {
       <Navbar />
       <Intro />
       {/* <About /> */}
+      <Projects />
       <SkillsCard />
       <Services />
-      <Projects />
       {/* <Contact /> */}
       <Footer />
     </div>

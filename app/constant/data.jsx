@@ -162,15 +162,6 @@ export const navLinks = [
 
 export const projects = [
   {
-    name: "Fatherly",
-    description:
-        ` 
-   Comprehensive e-learning platform with authentication, user/admin panels, conditional course progression, automated certificates, optimized UI/UX with Flowbite & Material UI, interactive Framer Motion animations, and multilingual support (Persian, Arabic, English).
-    `,
-    thumbnail: "/assets/fatherly.jpg",
-    url: "https://fatherly.ir/",
-  },
-  {
     name: "Neowshop",
     description: 
 `
@@ -178,5 +169,14 @@ Comprehensive multi-panel platform with bilingual interface (Danish & English), 
 `,
     thumbnail: "/assets/neowshop.png",
     url: "https://neowshop.dk/en",
+  },
+   {
+    name: "Fatherly",
+    description:
+        ` 
+   Comprehensive e-learning platform with authentication, user/admin panels, conditional course progression, automated certificates, optimized UI/UX with Flowbite & Material UI, interactive Framer Motion animations, and multilingual support (Persian, Arabic, English).
+    `,
+    thumbnail: "/assets/fatherly.jpg",
+    url: "https://fatherly.ir/",
   },
 ];

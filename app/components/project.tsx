@@ -25,7 +25,7 @@ export default function Projects() {
         </div>
 
         {/* Grid of cards */}
-        <div className="grid grid-cols-1  gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -33,12 +33,11 @@ export default function Projects() {
               className="group flex flex-col bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
             >
               {/* Image */}
-              <div className="flex justify-center mb-5">
+              <div className="bg-red-50 flex items-center justify-center mb-5  overflow-hidden rounded-md">
                 <img
                   src={project.thumbnail}
                   alt={project.name}
-                 
-                  className="w-24 h-24 object-contain rounded-md group-hover:scale-105 transition-transform duration-300"
+                  className=" object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
