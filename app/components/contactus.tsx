@@ -50,7 +50,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="mt-4 rounded-md bg-purple-400  py-2 px-6 text-gray-600 font-semibold hover:from-purple-200 hover:to-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-300 dark:bg-gradient-to-r size-25 "
+            className="mt-4 rounded-md bg-purple-400  py-2 px-6 text-gray-600 font-semibold hover:from-purple-200 hover:to-purple-100 focus:outline-none focus:ring-2 focus:ring-purple-300 size-25 "
             style={{ alignSelf: "flex-end" }}
           >
             ارسال پیام

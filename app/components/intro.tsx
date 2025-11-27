@@ -56,7 +56,7 @@ export default function Intro() {
 
         <h1 className="mt-4">
           <span className="font-bold">
-            Results-driven Frontend Developer with proven commercial experience building production-ready web applications using React.js and Next.js. Currently expanding expertise as a Backend Developer Trainee at Mother Technology Innovation Center, working with modern technologies including Elysia/Bun, PostgreSQL, and Prisma ORM.
+            Results-driven Frontend Developer with proven commercial experience building production-ready web applications using React.js and Next.js. Currently expanding expertise as a Backend Developer Trainee, working with modern technologies including Elysia/Bun, PostgreSQL, and Prisma ORM.
           </span>
 
         </h1>
